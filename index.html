@@ -63,6 +63,10 @@
   </div>
 
   <script>
+    const viewer = document.querySelector('model-viewer');
+viewer.addEventListener('load', () => {
+  viewer.model.materials[0].pbrMetallicRoughness.setBaseColorFactor([1, 0, 0, 1]); // rouge
+});
     function changerCouleur(couleur) {
       const viewer = document.querySelector('#monModel');
       const material = viewer.model.materials?.[0]; // Premier matériau
