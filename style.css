@@ -20,8 +20,8 @@ h1 {
 
 /* === VIEWER === */
 #viewer-container {
-  width: 50vw;
-  height: 30vw;
+  width: 80vw;
+  height: 45vh;
   margin-top: 20px;
   position: relative;
   padding-top: 10%;
