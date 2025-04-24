@@ -22,8 +22,8 @@ h1 {
 #viewer-container {
   width: 90vw;
   max-width: 1200px;
-  max-height: 500px;
   aspect-ratio: 16 / 9;
+  height: auto;
   margin-top: 20px;
   position: relative;
   padding-top: 56.25%; /* 16:9 ratio = 9/16*100 */
