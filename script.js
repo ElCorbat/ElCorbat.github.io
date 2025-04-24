@@ -2,6 +2,8 @@
 const viewer = document.querySelector('#monModel');
 const colorInput = document.getElementById('colorInput');
 const colorValue = document.getElementById('colorValue');
+const bgColorInput = document.getElementById('bgColor');
+const viewerContainer = document.getElementById('viewer-container');
 
 /**
  * Convertit une couleur hexadécimale en tableau [R, G, B, A]
