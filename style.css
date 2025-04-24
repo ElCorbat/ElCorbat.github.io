@@ -85,7 +85,7 @@ model-viewer {
   text-align: center;
 }
 
-/* === RESPONSIVE MEDIA === */
+/* === RESPONSIVE MEDIA === 
 @media (max-width: 768px) {
   #viewer-container {
     aspect-ratio: 16/9;
@@ -111,3 +111,4 @@ model-viewer {
     height: 36px;
   }
 }
+*/
