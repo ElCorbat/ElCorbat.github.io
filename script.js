@@ -2,6 +2,8 @@
 const viewer = document.querySelector('#monModel');
 const colorInput = document.getElementById('colorInput');
 const colorValue = document.getElementById('colorValue');
+const modelViewer = document.getElementById('monModel');
+const modelSelect = document.getElementById('modelSelect');
 
 /**
  * Convertit une couleur hexadécimale en tableau [R, G, B, A]
@@ -38,4 +40,8 @@ viewer.addEventListener('load', () => {
 // Mise à jour en temps réel via le color picker
 colorInput.addEventListener('input', (e) => {
   appliquerCouleur(e.target.value);
+});
+
+modelSelect.addEventListener('change', (e) => {
+  modelViewer.src = e.target.value; // Change le modèle affiché
 });
