@@ -12,19 +12,20 @@
 
   <h1>Visionneur 3D</h1>
 
-  <!-- Visionneur 3D -->
+<div id="viewer-container">
   <model-viewer 
     id="monModel"
     src="GLBGLB.glb"
-    alt="Un objet 3D"
-    camera-controls
-    auto-rotate
-    auto-rotate-delay="0"
+    alt="Objet 3D"
+    camera-controls 
+    auto-rotate 
     exposure="1"
     shadow-intensity="10"
+    auto-rotate-delay="0"
     ar>
   </model-viewer>
-
+  
+</div>
   <!-- Contrôles UI -->
   <div class="controls">
     <label for="colorInput">Couleur du modèle:</label>
