@@ -77,6 +77,7 @@ select {
   color: white; /* Texte en blanc pour le contraste */
   font-size: 150%; /* Taille de texte confortable à lire */
   appearance: none; /* Supprime le style par défaut du navigateur */
+  text-align: center;
   -webkit-appearance: none; /* Version Webkit (Chrome, Safari) */
   -moz-appearance: none; /* Version Firefox */
   
