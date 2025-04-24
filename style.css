@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #1e1e1e;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+model-viewer {
+  width: 90vw;
+  height: 70vh;
+  margin-top: 20px;
+  background-color: #f0b27a;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-picker {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #2c2c2c;
+}
+
+.current-color {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
