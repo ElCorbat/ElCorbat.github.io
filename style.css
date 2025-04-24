@@ -1,3 +1,4 @@
+/* === BASE === */
 body {
   margin: 0;
   padding: 0;
@@ -7,36 +8,101 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 h1 {
+  margin: 20px 0 10px;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  text-align: center;
+}
+
+/* === VIEWER === */
+#viewer-container {
+  width: 90vw;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9;
   margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f0b27a;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 model-viewer {
-  width: 90vw;
-  height: 70vh;
-  margin-top: 20px;
-  background-color: #f0b27a;
+  width: 100%;
+  height: 100%;
 }
 
+/* === CONTROLS === */
 .controls {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
+  width: 90vw;
+  max-width: 400px;
 }
 
+/* Label de champ */
+.controls label {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+/* === COLOR PICKER === */
 .color-picker {
-  margin-top: 10px;
-  padding: 10px;
+  padding: 0;
+  width: 100%;
+  height: 44px;
+  border: none;
   border-radius: 8px;
   background-color: #1e1e1e;
+  appearance: none;
+  cursor: pointer;
 }
 
+/* WebKit & Firefox color input fixes */
+.color-picker::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.color-picker::-webkit-color-swatch,
+.color-picker::-moz-color-swatch {
+  border: none;
+  border-radius: 8px;
+}
+
+/* Affichage de la couleur actuelle */
 .current-color {
-  margin-top: 10px;
   font-size: 14px;
   color: #aaa;
+  text-align: center;
 }
 
+/* === RESPONSIVE MEDIA === */
+@media (max-width: 768px) {
+  #viewer-container {
+    aspect-ratio: 4 / 3;
+  }
+
+  .color-picker {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .controls {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .color-picker {
+    height: 36px;
+  }
+}
