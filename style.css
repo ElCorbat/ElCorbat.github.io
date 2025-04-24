@@ -39,3 +39,15 @@ model-viewer {
   font-size: 14px;
   color: #aaa;
 }
+
+#viewer-container {
+  width: 90vw;
+  height: 70vh;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e; /* fond par défaut */
+}
