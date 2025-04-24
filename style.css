@@ -24,7 +24,7 @@ model-viewer {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .color-picker {
