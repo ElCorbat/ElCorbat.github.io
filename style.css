@@ -27,10 +27,11 @@ model-viewer {
   align-items: center;
 }
 
-.color-picker {
+#color-picker {
   margin-top: 10px;
   padding: 10px;
   border-radius: 8px;
+  background-color: #1e1e1e;
 }
 
 .current-color {
@@ -39,14 +40,3 @@ model-viewer {
   color: #aaa;
 }
 
-#viewer-container {
-  width: 90vw;
-  height: 70vh;
-  margin-top: 20px;
-  border-radius: 12px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #1e1e1e; /* fond par défaut */
-}
