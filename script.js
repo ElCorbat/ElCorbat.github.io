@@ -26,7 +26,6 @@ function appliquerCouleur(hex) {
   if (material?.pbrMetallicRoughness) {
     material.pbrMetallicRoughness.setBaseColorFactor(hexToRGBA(hex));
     colorValue.textContent = hex;
-    colorValue.style.backgroundColor = hex;
   }
 }
 
