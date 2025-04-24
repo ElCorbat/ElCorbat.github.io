@@ -23,8 +23,8 @@ model-viewer {
 .controls {
   margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: left;
+  flex-direction: row;
+  align-items: center;
 }
 
 .color-picker {
