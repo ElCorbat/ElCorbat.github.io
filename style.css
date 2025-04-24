@@ -67,10 +67,36 @@ model-viewer {
   cursor: pointer;
 }
 
+/* Style général du selecteur */
+select {
+  padding: 10px 15px; /* Ajoute de l'espace intérieur pour agrandir le champ */
+  border: 2px solid #3498db; /* Bordure bleue personnalisée */
+  border-radius: 8px; /* Coins arrondis pour un look plus doux */
+  background-color: #1e1e1e; /* Fond sombre assorti au reste du thème */
+  color: white; /* Texte en blanc pour le contraste */
+  font-size: 16px; /* Taille de texte confortable à lire */
+  appearance: none; /* Supprime le style par défaut du navigateur */
+  -webkit-appearance: none; /* Version Webkit (Chrome, Safari) */
+  -moz-appearance: none; /* Version Firefox */
+  
+  /* Flèche personnalisée ajoutée via une image SVG encodée */
+  background-image: url("data:image/svg+xml,%3Csvg fill='white' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6H0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; /* Ne répète pas l'image */
+  background-position: right 10px center; /* Place la flèche à droite au centre verticalement */
+  background-size: 12px; /* Taille de la flèche */
+  cursor: pointer; /* Change le curseur pour indiquer que c’est cliquable */
+}
+
+/* Focus : quand l'utilisateur clique dessus */
+select:focus {
+  outline: none; /* Enlève le contour bleu fluo par défaut */
+  border-color: #2ecc71; /* Change la couleur de la bordure pour montrer qu’il est actif */
+}
 /* WebKit & Firefox color input fixes */
 .color-picker::-webkit-color-swatch-wrapper {
   padding: 0;
 }
+
 .color-picker::-webkit-color-swatch,
 .color-picker::-moz-color-swatch {
   border: none;
